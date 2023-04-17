@@ -18,14 +18,13 @@ std::string isPalidrome(std::string S) {
 	return "True";
 }
 //Task 3
-std::string isThinks(std::string S) {
-	int count = 0;
-	for (int i = 0; i < S.size(); i++) {		
-		count++;
-
-		return count;
+int isThinks(std::string str) {
+		int count = 0;
+		for (int i = 0; i < str.size(); i++)
+			if(str[i] ==' '|| str[i] == '.'|| str[i] == ','|| str[i] == '!'|| str[i] == '?')
+			count++;
+		return count;	
 	}
-}
 
 int main() {
 	setlocale(LC_ALL, "Rus");
