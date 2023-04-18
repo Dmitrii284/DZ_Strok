@@ -27,9 +27,11 @@ int isThinks(std::string str) {
 	}
 //Task 4
 std::string Substr(std::string &Str,char sym) {
-	//std::string ret_Str;	
-	//if (Str.rfind(sym))
-		return	Str.substr(sym);
+	std::string ret_Str;
+	int N = Str.rfind(sym);
+	if (Str.rfind(sym))
+		return	Str.substr(N);
+	return ret_Str;
 }
 
 
