@@ -1,12 +1,5 @@
 ﻿#include <iostream>
-#include <cstdlib>  // arr[i] = rand() % (10 + 1 - 1) + 1; // [1 ...10] Случайные числа  массива
-#include <ctime> //srand(time(NULL)); Случайные числа  массива
-#include <algorithm> // функция  stor  Быстрая сортировка std::sort(arr, arr + size);  
-// функцию swap Сортировка через сравнениемассивов std::swap(arr[j], arr[j + 1]);
 #include <string>
-#include <fstream>
-#include < stdio.h.>
-#include <cstring>
 
 //Task 2
 std::string isPalidrome(std::string S) {
