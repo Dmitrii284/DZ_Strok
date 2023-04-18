@@ -1,8 +1,8 @@
-#include <iostream>
-#include <cstdlib>  // arr[i] = rand() % (10 + 1 - 1) + 1; // [1 ...10] Случайные числа  массива
-#include <ctime> //srand(time(NULL)); Случайные числа  массива
-#include <algorithm> // функция  stor  Быстрая сортировка std::sort(arr, arr + size);  
-// функцию swap Сортировка через сравнениемассивов std::swap(arr[j], arr[j + 1]);
+п»ї#include <iostream>
+#include <cstdlib>  // arr[i] = rand() % (10 + 1 - 1) + 1; // [1 ...10] РЎР»СѓС‡Р°Р№РЅС‹Рµ С‡РёСЃР»Р°  РјР°СЃСЃРёРІР°
+#include <ctime> //srand(time(NULL)); РЎР»СѓС‡Р°Р№РЅС‹Рµ С‡РёСЃР»Р°  РјР°СЃСЃРёРІР°
+#include <algorithm> // С„СѓРЅРєС†РёСЏ  stor  Р‘С‹СЃС‚СЂР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР° std::sort(arr, arr + size);  
+// С„СѓРЅРєС†РёСЋ swap РЎРѕСЂС‚РёСЂРѕРІРєР° С‡РµСЂРµР· СЃСЂР°РІРЅРµРЅРёРµРјР°СЃСЃРёРІРѕРІ std::swap(arr[j], arr[j + 1]);
 #include <string>
 #include <fstream>
 #include < stdio.h.>
@@ -29,9 +29,9 @@ int isThinks(std::string str) {
 std::string Substr(std::string &Str,char sym) {
 	std::string ret_Str;
 	int N = Str.rfind(sym);
-	if (Str.rfind(sym))
-		return	Str.substr(N);
-	return ret_Str;
+	if (N < Str.size())
+	return Str.substr(N);
+	return "РќРµС‚ С‚Р°РєРѕРіРѕ СЃРёРјРІРѕР»Р°!!!";
 }
 
 
